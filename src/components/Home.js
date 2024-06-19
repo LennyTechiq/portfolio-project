@@ -23,7 +23,7 @@ function Home() {
       <section className="about-me">
       <h1>About Me</h1>
       <p>Biography: With a background in computer science, I specialize in creating intuitive and responsive web applications. I’m passionate about user-centered design and continuous learning.</p>
-      <a href="path/to/your-resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+      <a href="/Leonard_Runya.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
       <h2>Contact</h2>
       <p>Email: <a href="mailto:leonardrongoma3@gmail.com">leonardrongoma3@gmail.com</a></p>
       <p>LinkedIn: <a href="https://linkedin.com/in/leonard-rongoma" target="_blank" rel="noopener noreferrer">linkedin.com/in/leonard-rongoma</a></p>

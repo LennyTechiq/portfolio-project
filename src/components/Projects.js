@@ -16,7 +16,7 @@ function Projects() {
           <p>Challenges and Solutions: Integration of a payment method.</p>
           <p>Outcome: Desired functionality.</p>
           <a>Live Site</a>
-          <a href="https://github.com/username/repository" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          <a href="https://github.com/LennyTechiq/ecommerce-backend" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
         </div>
         <div className="project-card" id="project2">
           <h2>Fish Management System</h2>
@@ -26,7 +26,7 @@ function Projects() {
           <p>Challenges and Solutions: Ensured cross-platform compatibility.</p>
           <p>Outcome: 10,000+ downloads, 4.8-star rating.</p>
           <a>Live App</a>
-          <a href="https://github.com/username/repository" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+          <a href="https://github.com/LennyTechiq/YoFishSystem" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
         </div>
         {/* Add more project cards here */}
       </div>
