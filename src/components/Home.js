@@ -20,6 +20,12 @@ function Home() {
           <li><Link to="/projects#project2">Fish Stock Management App</Link></li>
         </ul>
       </section>
+      <section className="graphic-design-link">
+        <h1>Graphic Design</h1>
+        <p>In addition to software engineering, I have a passion for graphic design. I specialize in creating visually compelling designs that enhance user experience and engagement.</p>
+        <p>My projects range from logo design and branding to user interface design and illustrations. Each project showcases my attention to detail and commitment to delivering high-quality work.</p>
+        <p>Check out my <Link to="/graphic-design">graphic design projects</Link> to see some examples of my work.</p>
+      </section>
       <section className="about-me">
       <h1>About Me</h1>
       <p>Biography: With a background in computer science, I specialize in creating intuitive and responsive web applications. I’m passionate about user-centered design and continuous learning.</p>
