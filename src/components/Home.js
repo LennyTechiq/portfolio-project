@@ -25,8 +25,8 @@ function Home() {
       <p>Biography: With a background in computer science, I specialize in creating intuitive and responsive web applications. I’m passionate about user-centered design and continuous learning.</p>
       <a href="path/to/your-resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:alex.johnson@example.com">leonardrongoma3@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/alexjohnson" target="_blank" rel="noopener noreferrer">linkedin.com/in/leonard-rongoma</a></p>
+      <p>Email: <a href="mailto:leonardrongoma3@gmail.com">leonardrongoma3@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/leonard-rongoma" target="_blank" rel="noopener noreferrer">linkedin.com/in/leonard-rongoma</a></p>
       </section>
     </div>
   );
