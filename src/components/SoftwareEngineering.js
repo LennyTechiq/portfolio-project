@@ -6,7 +6,7 @@ function SoftwareEngineering() {
   return (
     <div className="Projects">
       <Header />
-      <h1>Projects</h1>
+      <h1>Software Engineering Projects</h1>
       <div className="projects-container">
         <div className="project-card" id="project1">
           <h2>E-commerce Backend</h2>

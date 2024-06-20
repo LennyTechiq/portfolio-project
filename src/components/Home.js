@@ -49,8 +49,8 @@ function Home() {
           </a>
         </p>
         <p>
-          <FontAwesomeIcon icon={faFacebook} /> Facebook: <a href="https://facebook.com/leonard.rongoma" target="_blank" rel="noopener noreferrer">
-            facebook.com/leonard.rongoma
+          <FontAwesomeIcon icon={faFacebook} /> Facebook: <a href="https://facebook.com/LennzTech" target="_blank" rel="noopener noreferrer">
+            facebook.com/leonard-rongoma
           </a>
         </p>
       </section>
