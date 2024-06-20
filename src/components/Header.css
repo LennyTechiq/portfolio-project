@@ -1,29 +1,21 @@
 /* Header.css */
 
 .header {
-    background-color: #1e90ff;
-    padding: 20px 0;
-  }
-  
-  .nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-  
-  .nav-list li {
-    margin: 0 15px;
-  }
-  
-  .nav-list a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s; /* Smooth transition for color change */
-  }
-  
-  .nav-list a:hover {
-    color: #f0f0f0; /* Change color on hover */
-  }
-  
+  background-color: #1e90ff;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  margin-left: 10px; /* Reduce margin for closer spacing */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f0f0f0 !important; /* Change color on hover */
+}

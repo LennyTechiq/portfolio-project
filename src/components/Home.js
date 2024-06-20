@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import Header from './Header';
 import './Home.css';
 
@@ -27,12 +30,25 @@ function Home() {
         <p>Check out my <Link to="/graphic-design">graphic design projects</Link> to see some examples of my work.</p>
       </section>
       <section className="about-me">
-      <h1>About Me</h1>
-      <p>Biography: With a background in computer science, I specialize in creating intuitive and responsive web applications. I’m passionate about user-centered design and continuous learning.</p>
-      <a href="/Leonard_Runya.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:leonardrongoma3@gmail.com">leonardrongoma3@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/leonard-rongoma" target="_blank" rel="noopener noreferrer">linkedin.com/in/leonard-rongoma</a></p>
+        <h1>About Me</h1>
+        <p>Biography: With a background in computer science, I specialize in creating intuitive and responsive web applications. I’m passionate about user-centered design and continuous learning.</p>
+        <a href="/Leonard_Runya.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+          <FontAwesomeIcon icon={faDownload} /> Download Resume
+        </a>
+        <h2>Contact</h2>
+        <p>
+          <FontAwesomeIcon icon={faEnvelope} /> Email: <a href="mailto:leonardrongoma3@gmail.com">leonardrongoma3@gmail.com</a>
+        </p>
+        <p>
+          <FontAwesomeIcon icon={faLinkedin} /> LinkedIn: <a href="https://linkedin.com/in/leonard-rongoma" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/leonard-rongoma
+          </a>
+        </p>
+        <p>
+          <FontAwesomeIcon icon={faFacebook} /> Facebook: <a href="https://facebook.com/leonard.rongoma" target="_blank" rel="noopener noreferrer">
+            facebook.com/leonard.rongoma
+          </a>
+        </p>
       </section>
     </div>
   );
