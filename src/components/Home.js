@@ -24,8 +24,8 @@ function Home() {
       <section className="projects-highlight">
         <h2>Highlighted Projects</h2>
         <ul>
-          <li><Link to="/projects#project1">E-commerce Backend</Link></li>
-          <li><Link to="/projects#project2">Fish Stock Management App</Link></li>
+          <li><Link to="/software-engineering#project1">E-commerce Backend</Link></li>
+          <li><Link to="/software-engineering#project2">Fish Stock Management App</Link></li>
         </ul>
       </section>
       <section className="graphic-design-link">
@@ -37,7 +37,7 @@ function Home() {
       <section className="about-me">
         <h2>About Me</h2>
         <p>Biography: With a background in computer science, I specialize in creating intuitive and responsive web applications. I’m passionate about user-centered design and continuous learning.</p>
-        <p>I have experience working with various programming languages and frameworks, including JavaScript, React, Node.js, and Python. My ability to adapt to new technologies quickly and efficiently has allowed me to thrive in fast-paced development environments.</p>
+        <p>I have experience working with various programming languages and frameworks, including Java, JavaScript, React, Node.js, and Spring Boot. My ability to adapt to new technologies quickly and efficiently has allowed me to thrive in fast-paced development environments.</p>
         <p>In my free time, I enjoy contributing to open-source projects, exploring the latest advancements in technology, and mentoring aspiring developers. I believe in the power of community and collaboration to drive innovation and achieve outstanding results.</p>
         <p>When I'm not coding, you can find me hiking in the mountains, experimenting with new recipes in the kitchen, or capturing moments through photography. I strive to maintain a balanced lifestyle that fuels both my professional and personal growth.</p>
         <a href="/Leonard_Runya.pdf" className="btn" target="_blank" rel="noopener noreferrer">
