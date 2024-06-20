@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from './Header';
-import './Projects.css';
+import './SoftwareEngineering.css';
 
-function Projects() {
+function SoftwareEngineering() {
   return (
     <div className="Projects">
       <Header />
@@ -34,4 +34,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default SoftwareEngineering;

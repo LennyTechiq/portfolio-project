@@ -19,8 +19,8 @@ function Home() {
       <section className="projects-highlight">
         <h2>Highlighted Projects</h2>
         <ul>
-          <li><Link to="/projects#project1">E-commerce Backend</Link></li>
-          <li><Link to="/projects#project2">Fish Stock Management App</Link></li>
+          <li><Link to="/software-engineering#project1">E-commerce Backend</Link></li>
+          <li><Link to="/software-engineering#project2">Fish Stock Management App</Link></li>
         </ul>
       </section>
       <section className="graphic-design-link">
@@ -35,6 +35,10 @@ function Home() {
         <a href="/Leonard_Runya.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
           <FontAwesomeIcon icon={faDownload} /> Download Resume
         </a>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <h2>Contact</h2>
         <p>
           <FontAwesomeIcon icon={faEnvelope} /> Email: <a href="mailto:leonardrongoma3@gmail.com">leonardrongoma3@gmail.com</a>

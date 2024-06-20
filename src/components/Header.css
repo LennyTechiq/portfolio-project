@@ -1,21 +1,22 @@
 /* Header.css */
 
-.header {
-  background-color: #1e90ff;
+.navbar-brand {
+  color: #ff6c28;
+  font-size: 25px;
+  font-weight: 700;
 }
 
-.logo {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
+.navbar-brand:hover {
   text-decoration: none;
 }
 
 .navbar-nav .nav-link {
   color: #fff !important;
-  margin-left: 10px; /* Reduce margin for closer spacing */
+  margin-left: 10px;
+  font-weight: 600;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #f0f0f0 !important; /* Change color on hover */
+  color: #ff6c28 !important;
+  text-decoration: none;
 }

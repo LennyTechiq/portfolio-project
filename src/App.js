@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
-import Projects from './components/Projects';
+import SoftwareEngineering from './components/SoftwareEngineering';
 import GraphicDesign from './components/GraphicDesign';
 import './App.css';
 
@@ -12,7 +12,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/software-engineering" element={<SoftwareEngineering />} />
           <Route path="/graphic-design" element={<GraphicDesign />} />
         </Routes>
       </div>
