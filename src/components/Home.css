@@ -1,45 +1,71 @@
-/* Home.css */
-
 /* General Styles */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.home {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 /* Hero Section Styles */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.gurcim.com/wp-content/uploads/2020/02/divi-gallery-hero-background.jpg');
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(135deg, #ff7f50, #1e90ff);
   color: #ffffff;
-  text-align: center;
-  padding: 150px 20px;
-  margin: 0;
+  padding: 100px 20px;
+  width: 100%;
+  text-align: left;
 }
 
 .hero-content {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.hero h1 {
+.text-content {
+  flex: 1;
+  min-width: 200px;
+}
+
+.text-content h1 {
   font-size: 48px;
   margin-bottom: 20px;
-  color: #ff7f50;
 }
 
-.hero p {
+.text-content p {
   font-size: 24px;
   margin-bottom: 40px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.profile-picture {
+  width: 300px;
+  height: 300px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  object-fit: cover;
+  border: 5px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Highlighted Projects Section Styles */
 .projects-highlight {
   padding: 40px 20px;
   background-color: #f9f9f9;
-  text-align: center;
+  width: 100%;
 }
 
 .projects-highlight h2 {
@@ -80,15 +106,14 @@ body {
 .graphic-design-link {
   padding: 40px 20px;
   background-color: #f0f0f0;
-  text-align: center;
-  margin: 20px 0;
-  border-radius: 8px;
-  animation: fadeIn 2s ease-in-out;
+  width: 100%;
+  text-align: left;
 }
 
-.graphic-design-link h1 {
+.graphic-design-link h2 {
   font-size: 28px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .graphic-design-link p {
@@ -96,24 +121,19 @@ body {
   margin-bottom: 10px;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 /* About Me Section Styles */
 .about-me {
   background-color: #ffffff;
   padding: 40px 20px;
-  margin-top: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: left;
 }
 
 .about-me h2 {
   font-size: 24px;
   color: #333;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .about-me p {
@@ -122,18 +142,72 @@ body {
   margin-bottom: 10px;
 }
 
-.btn {
+.about-me .btn {
   display: inline-block;
   padding: 10px 20px;
   background-color: #1e90ff;
   color: #ffffff;
   border-radius: 4px;
   transition: background-color 0.3s;
+  text-decoration: none;
 }
 
-.btn:hover {
+.about-me .btn:hover {
   background-color: #155a8a;
+}
+
+.contact h3 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.contact p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.contact a {
+  color: #1e90ff;
   text-decoration: none;
+}
+
+.contact a:hover {
+  color: #155a8a;
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer .contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 /* Font Awesome Icon Styles */
@@ -143,20 +217,6 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .header nav ul li {
-    margin: 10px 0;
-  }
-
   .hero h1 {
     font-size: 36px;
   }
@@ -173,11 +233,35 @@ body {
     font-size: 16px;
     padding: 10px;
   }
+
+  .graphic-design-link h2 {
+    font-size: 24px;
+  }
+
+  .graphic-design-link p {
+    font-size: 14px;
+  }
+
+  .about-me h2 {
+    font-size: 20px;
+  }
+
+  .about-me p {
+    font-size: 14px;
+  }
+
+  .contact h3 {
+    font-size: 18px;
+  }
+
+  .contact p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
   .hero {
-    padding: 100px 20px;
+    padding: 80px 20px;
   }
 
   .hero h1 {
@@ -195,5 +279,29 @@ body {
   .projects-highlight ul li a {
     font-size: 14px;
     padding: 8px;
+  }
+
+  .graphic-design-link h2 {
+    font-size: 20px;
+  }
+
+  .graphic-design-link p {
+    font-size: 12px;
+  }
+
+  .about-me h2 {
+    font-size: 18px;
+  }
+
+  .about-me p {
+    font-size: 12px;
+  }
+
+  .contact h3 {
+    font-size: 16px;
+  }
+
+  .contact p {
+    font-size: 12px;
   }
 }
