@@ -38,6 +38,8 @@ body {
 .text-content h1 {
   font-size: 48px;
   margin-bottom: 20px;
+  font-weight: 600;
+  color: #0059ff;
 }
 
 .text-content p {
@@ -187,7 +189,7 @@ body {
 }
 
 .footer .contact-info {
-  max-width: 600px;
+  max-width: 380px;
   margin: 0 auto;
 }
 
@@ -199,6 +201,7 @@ body {
 .footer p {
   font-size: 18px;
   margin: 5px 0;
+  text-align: left;
 }
 
 .footer a {
@@ -295,6 +298,10 @@ body {
 
   .about-me p {
     font-size: 12px;
+  }
+
+  .footer .contact-info {
+    max-width: 240px;
   }
 
   .contact h3 {

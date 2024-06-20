@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faFacebookSquare } from '@fortawesome/free-brands-svg-icons'; // Import faLinkedin, faFacebookSquare, faEnvelope from brands package
-import { faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons'; // Import faFilePdf (download icon) from solid package
+import { faLinkedin, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
 import './Home.css';
 
 function Home() {

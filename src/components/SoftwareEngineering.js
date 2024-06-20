@@ -14,7 +14,7 @@ function SoftwareEngineering() {
           <p><strong>Role:</strong> Lead Developer</p>
           <p><strong>Technologies:</strong> Java, Spring Boot</p>
           <p><strong>Challenges and Solutions:</strong> Integration of a payment method.</p>
-          <p><strong>Outcome:</strong> Desired functionality.</p>
+          <p><strong>Outcome:</strong> N/A</p>
           <div className="project-links">
             <a href="https://github.com/LennyTechiq/ecommerce-backend" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
           </div>
@@ -24,8 +24,8 @@ function SoftwareEngineering() {
           <p><strong>Description:</strong> Designed a desktop app for fish products management.</p>
           <p><strong>Role:</strong> Designer and Developer</p>
           <p><strong>Technologies:</strong> Swing, Java</p>
-          <p><strong>Challenges and Solutions:</strong> Ensured cross-platform compatibility.</p>
-          <p><strong>Outcome:</strong> 10,000+ downloads, 4.8-star rating.</p>
+          <p><strong>Challenges and Solutions:</strong> Ensuring cross-platform compatibility.</p>
+          <p><strong>Outcome:</strong> N/A</p>
           <div className="project-links">
             <a href="https://github.com/LennyTechiq/YoFishSystem" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
           </div>
