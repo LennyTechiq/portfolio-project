@@ -91,7 +91,7 @@ function Home() {
             </a>
           </p>
           <p>
-            <FontAwesomeIcon icon={faFacebookSquare} className="fa-icon" /> Facebook: <a href="https://facebook.com/leonard.rongoma" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebookSquare} className="fa-icon" /> Facebook: <a href="https://facebook.com/LennzTech" target="_blank" rel="noopener noreferrer">
               facebook.com/leonard.rongoma
             </a>
           </p>
