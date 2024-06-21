@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,6 +7,33 @@ import { faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
 import './Home.css';
 
 function Home() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [slides] = useState([
+    {
+      id: 1,
+      imageUrl: '/images/logo-project.jpg',
+      alt: 'Graphic Design 1'
+    },
+    {
+      id: 2,
+      imageUrl: '/images/business-card-project.jpeg',
+      alt: 'Graphic Design 2'
+    },
+    {
+      id: 3,
+      imageUrl: '/images/staff-id-project.jpeg',
+      alt: 'Graphic Design 3'
+    }
+  ]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
+    }, 5000); // Change slide every 5 seconds (5000ms)
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
   return (
     <div className="home">
       <Header />
@@ -30,6 +57,16 @@ function Home() {
       </section>
       <section className="graphic-design-link">
         <h2>Graphic Design</h2>
+        <div className="graphic-design-slideshow">
+          {slides.map((slide, index) => (
+            <img
+              key={slide.id}
+              src={slide.imageUrl}
+              alt={slide.alt}
+              className={index === currentSlide ? 'active' : ''}
+            />
+          ))}
+        </div>
         <p>In addition to software engineering, I have a passion for graphic design. I specialize in creating visually compelling designs that enhance user experience and engagement.</p>
         <p>My projects range from logo design and branding to user interface design and illustrations. Each project showcases my attention to detail and commitment to delivering high-quality work.</p>
         <p>Check out my <Link to="/graphic-design">graphic design projects</Link> to see some examples of my work.</p>
