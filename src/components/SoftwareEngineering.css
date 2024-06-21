@@ -47,6 +47,7 @@ body, html {
 .project-card h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  margin-top: 10px;
   color: #1e90ff;
 }
 
