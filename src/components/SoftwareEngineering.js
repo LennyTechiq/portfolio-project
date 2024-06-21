@@ -3,34 +3,51 @@ import Header from './Header';
 import './SoftwareEngineering.css';
 
 function SoftwareEngineering() {
+  const projects = [
+    {
+      id: 1,
+      title: 'E-commerce Backend',
+      description: 'Developed an e-commerce backend application.',
+      role: 'Lead Developer',
+      technologies: 'Java, Spring Boot',
+      challenges: 'Integration of a payment method.',
+      outcome: 'N/A',
+      imageUrl: "./images/spring-boot.png",
+      githubLink: 'https://github.com/LennyTechiq/ecommerce-backend'
+    },
+    {
+      id: 2,
+      title: 'Fish Management System',
+      description: 'Designed a desktop app for fish products management.',
+      role: 'Designer and Developer',
+      technologies: 'Swing, Java',
+      challenges: 'Ensuring cross-platform compatibility.',
+      outcome: 'N/A',
+      imageUrl: "./images/Fish-Management.png",
+      githubLink: 'https://github.com/LennyTechiq/YoFishSystem'
+    }
+    // Add more projects as needed
+  ];
+
   return (
     <div className="projects-page">
       <Header />
       <h1>Software Engineering Projects</h1>
       <div className="projects-container">
-        <div className="project-card" id="project1">
-          <h2>E-commerce Backend</h2>
-          <p><strong>Description:</strong> Developed an e-commerce backend application.</p>
-          <p><strong>Role:</strong> Lead Developer</p>
-          <p><strong>Technologies:</strong> Java, Spring Boot</p>
-          <p><strong>Challenges and Solutions:</strong> Integration of a payment method.</p>
-          <p><strong>Outcome:</strong> N/A</p>
-          <div className="project-links">
-            <a href="https://github.com/LennyTechiq/ecommerce-backend" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        {projects.map((project) => (
+          <div key={project.id} className="project-card" id={`project${project.id}`}>
+            <img src={project.imageUrl} alt={project.title} className="project-image" />
+            <h2>{project.title}</h2>
+            <p><strong>Description:</strong> {project.description}</p>
+            <p><strong>Role:</strong> {project.role}</p>
+            <p><strong>Technologies:</strong> {project.technologies}</p>
+            <p><strong>Challenges and Solutions:</strong> {project.challenges}</p>
+            <p><strong>Outcome:</strong> {project.outcome}</p>
+            <div className="project-links">
+              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+            </div>
           </div>
-        </div>
-        <div className="project-card" id="project2">
-          <h2>Fish Management System</h2>
-          <p><strong>Description:</strong> Designed a desktop app for fish products management.</p>
-          <p><strong>Role:</strong> Designer and Developer</p>
-          <p><strong>Technologies:</strong> Swing, Java</p>
-          <p><strong>Challenges and Solutions:</strong> Ensuring cross-platform compatibility.</p>
-          <p><strong>Outcome:</strong> N/A</p>
-          <div className="project-links">
-            <a href="https://github.com/LennyTechiq/YoFishSystem" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
-          </div>
-        </div>
-        {/* Additional project cards can be added here */}
+        ))}
       </div>
     </div>
   );

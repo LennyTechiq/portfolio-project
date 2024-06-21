@@ -12,17 +12,17 @@ function Home() {
     {
       id: 1,
       imageUrl: '/images/logo-project.jpg',
-      alt: 'Graphic Design 1'
+      alt: 'Logo Design'
     },
     {
       id: 2,
       imageUrl: '/images/business-card-project.jpeg',
-      alt: 'Graphic Design 2'
+      alt: 'Business Card Design'
     },
     {
       id: 3,
       imageUrl: '/images/staff-id-project.jpeg',
-      alt: 'Graphic Design 3'
+      alt: 'Staff Id Design'
     }
   ]);
 
@@ -55,21 +55,35 @@ function Home() {
           <li><Link to="/software-engineering#project2">Fish Stock Management App</Link></li>
         </ul>
       </section>
-      <section className="graphic-design-link">
-        <h2>Graphic Design</h2>
-        <div className="graphic-design-slideshow">
-          {slides.map((slide, index) => (
-            <img
-              key={slide.id}
-              src={slide.imageUrl}
-              alt={slide.alt}
-              className={index === currentSlide ? 'active' : ''}
-            />
-          ))}
+      <section className="skills-and-design">
+        <div className="skills-section">
+          <h2>Skills</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Graphic Design</li>
+            <li>UI/UX Design</li>
+          </ul>
         </div>
-        <p>In addition to software engineering, I have a passion for graphic design. I specialize in creating visually compelling designs that enhance user experience and engagement.</p>
-        <p>My projects range from logo design and branding to user interface design and illustrations. Each project showcases my attention to detail and commitment to delivering high-quality work.</p>
-        <p>Check out my <Link to="/graphic-design">graphic design projects</Link> to see some examples of my work.</p>
+        <div className="divider"></div>
+        <div className="graphic-design-link">
+          <h2>Graphic Design</h2>
+          <div className="graphic-design-slideshow">
+            {slides.map((slide, index) => (
+              <div key={slide.id} className={index === currentSlide ? 'slide active' : 'slide'}>
+                <img
+                  src={slide.imageUrl}
+                  alt={slide.alt}
+                  className="graphic-design-image"
+                />
+                <div className="label">{slide.alt}</div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
       <section className="about-me">
         <h2>About Me</h2>
