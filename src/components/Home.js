@@ -11,17 +11,17 @@ function Home() {
   const [slides] = useState([
     {
       id: 1,
-      imageUrl: '/images/logo-project.jpg',
+      imageUrl: '${process.env.PUBLIC_URL}/images/logo-project.jpg',
       alt: 'Logo Design'
     },
     {
       id: 2,
-      imageUrl: '/images/business-card-project.jpeg',
+      imageUrl: '${process.env.PUBLIC_URL}/images/business-card-project.jpeg',
       alt: 'Business Card Design'
     },
     {
       id: 3,
-      imageUrl: '/images/staff-id-project.jpeg',
+      imageUrl: '${process.env.PUBLIC_URL}/images/staff-id-project.jpeg',
       alt: 'Staff Id Design'
     }
   ]);
@@ -44,7 +44,7 @@ function Home() {
             <p>A passionate software engineer with a knack for creating stunning and user-friendly web and desktop applications.</p>
           </div>
           <div className="image-container">
-            <img src='/images/profile-picture.jpg' alt="Leonard Rongoma" className="profile-picture" />
+            <img src='${process.env.PUBLIC_URL}/images/profile-picture.jpg' alt="Leonard Rongoma" className="profile-picture" />
           </div>
         </div>
       </section>
