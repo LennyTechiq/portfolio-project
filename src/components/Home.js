@@ -44,7 +44,7 @@ function Home() {
             <p>A passionate software engineer with a knack for creating stunning and user-friendly web and desktop applications.</p>
           </div>
           <div className="image-container">
-            <img src='${process.env.PUBLIC_URL}/images/profile-picture.jpg' alt="Leonard Rongoma" className="profile-picture" />
+            <img src='./images/profile-picture.jpg' alt="Leonard Rongoma" className="profile-picture" />
           </div>
         </div>
       </section>
