@@ -32,6 +32,12 @@ function GraphicDesign() {
           <p>Crafting stylish and professional business cards that make a lasting impression. Each card design is tailored to reflect the individual's or company's personality and brand.</p>
           {/* You can add more content or details as needed */}
         </div>
+        <div className="project-card" id="campaign-posters">
+          <img src='./images/campaign-poster-project.jpg' alt="Campaign Posters" />
+          <h2>Campaign Posters</h2>
+          <p>Designing impactful campaign posters that communicate messages effectively and resonate with the target audience. These posters are crafted to be visually appealing and persuasive.</p>
+          {/* You can add more content or details as needed */}
+        </div>
       </div>
     </div>
   );
