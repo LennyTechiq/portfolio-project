@@ -11,17 +11,17 @@ function Home() {
   const [slides] = useState([
     {
       id: 1,
-      imageUrl: '${process.env.PUBLIC_URL}/images/logo-project.jpg',
+      imageUrl: './images/logo-project.jpg',
       alt: 'Logo Design'
     },
     {
       id: 2,
-      imageUrl: '${process.env.PUBLIC_URL}/images/business-card-project.jpeg',
+      imageUrl: './images/business-card-project.jpeg',
       alt: 'Business Card Design'
     },
     {
       id: 3,
-      imageUrl: '${process.env.PUBLIC_URL}/images/staff-id-project.jpeg',
+      imageUrl: './images/staff-id-project.jpeg',
       alt: 'Staff Id Design'
     }
   ]);
