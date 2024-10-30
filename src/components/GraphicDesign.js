@@ -15,7 +15,7 @@ function GraphicDesign() {
           {/* You can add more content or details as needed */}
         </div>
         <div className="project-card" id="banners">
-          <img src='./images/banner-project.jpg' alt="Banners" />
+          <img src='./images/Fish-Banner.webp' alt="Banners" />
           <h2>Banner Designs</h2>
           <p>Designing eye-catching banners for various purposes, including digital marketing, social media, and events. These banners are designed to capture attention and convey the intended message effectively.</p>
           {/* You can add more content or details as needed */}
